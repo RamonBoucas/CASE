@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/personagens e scripts.unity
+  isLoaded: 1
+  isActive: 1
