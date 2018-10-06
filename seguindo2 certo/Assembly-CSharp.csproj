@@ -64,8 +64,12 @@
     <Compile Include="Assets\arma.cs" />
     <Compile Include="Assets\Assets\player_controler.cs" />
     <Compile Include="Assets\ataque.cs" />
+    <Compile Include="Assets\barraDeVida.cs" />
     <Compile Include="Assets\enemyIA.cs" />
     <Compile Include="Assets\espada.cs" />
+    <Compile Include="Assets\mainMenu.cs" />
+    <Compile Include="Assets\menuClasses.cs" />
+    <Compile Include="Assets\novoBarraVida.cs" />
     <Compile Include="Assets\playerMov.cs" />
     <Compile Include="Assets\tiro.cs" />
     <Compile Include="Assets\tiroPlayer.cs" />

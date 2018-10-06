@@ -22,13 +22,7 @@ public class enemyIA : MonoBehaviour
 
     public float tempoParaTiro;
 
-
-
     float tempoCorrido;
-
-
-
-
 
     // Use this for initialization
     void Start()
@@ -45,59 +39,40 @@ public class enemyIA : MonoBehaviour
         //1 estado combate melee
         if (distancia < distanciaMinima)
         {
-
-
         }
-
-
 
         //2 estado o de movimentação
         if ((distancia > distanciaMinima) && (distancia < distanciaMaxima))
         {
             // move o inimigo na direção do player
             transform.position = Vector2.MoveTowards(transform.position, meuPlayer.position, minhaVelocidade * Time.deltaTime);
-
-            
-
-
-
         }
-
 
         // 3 estado o de combate ranged
         if(distancia > distanciaMaxima)
         {
-            atirar();
+             
         }
-
 
         anim.SetFloat("distanciaPlayerEnemy", distancia);
 
         float deltaZ = (meuPlayer.position.z - transform.position.z);
         float deltaX = (meuPlayer.position.x - transform.position.x);
         float tgdiff = (deltaZ / deltaX);
-
-
-       
-
-
-
     }
 
+
+    /*
     void atirar()
     {
         tempoCorrido += Time.deltaTime;
-
-
         if (tempoCorrido > tempoParaTiro) {
             tempoCorrido = 0;
             Instantiate(tiroPrefab, transform.position, Quaternion.identity);
         }
-
-
     }
 
-
+    */
 }
 
 
